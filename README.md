@@ -5,7 +5,7 @@ Some usefull Docker commands
 * __Remove all <none> images__
   
 ```
-docker images -f "dangling=true" -q
+docker rm $(docker images -f "dangling=true" -q)
 ```
 
 * __Clear contairers history (old containers)__
