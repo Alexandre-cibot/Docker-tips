@@ -2,7 +2,7 @@
 Some usefull Docker commands
 
 
-* __Remove all <none> images__
+* __Remove all \<none> images__
   
 ```
 docker rm $(docker images -f "dangling=true" -q)
