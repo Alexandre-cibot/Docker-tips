@@ -18,7 +18,7 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -a -q)
 ```
 
-* __Filter (eg: all exited container)__
+* __Filter (eg: all exited container --filter || -f)__
 ```
 docker ps --filter "status=exited"
 
